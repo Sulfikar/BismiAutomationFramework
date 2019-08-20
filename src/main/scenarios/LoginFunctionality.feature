@@ -3,7 +3,7 @@
 @LoginFunction
 Feature: Feature to test multiple login scenarios
   
-  @validLogin
+  @DataCreation
   Scenario: Valid login verification scenario
     Given I Launch critical application
     When I see login page
