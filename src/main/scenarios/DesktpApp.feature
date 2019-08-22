@@ -1,6 +1,6 @@
 #Author: Sulfikar Ali Nazar
 @desktop
-Feature: Title of your feature
+Feature: Feature to automate desktop application
   I want to use this template for my feature file
 
   @DataCreation

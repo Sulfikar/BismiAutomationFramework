@@ -2,6 +2,7 @@ package org.bismi.testng;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.IExecutionListener;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -13,7 +14,7 @@ import io.cucumber.testng.PickleEventWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = "src/main/scenarios", tags = {"@DataCreation"}, plugin = "json:bin/target/LoginFunctionality.json",glue = { "org.bismi.steps" })
-public class TestRunner {
+public class TestRunner{
 	private Logger log = LogManager.getLogger(TestRunner.class);
 	private TestNGCucumberRunner testNGCucumberRunner;
 
@@ -35,6 +36,7 @@ public class TestRunner {
 	@Test(groups = "cucumber scenarios", description = "Run Cucumber Scenarios", dataProvider = "scenarios")
 	public void scenario(PickleEventWrapper pickleEvent, CucumberFeatureWrapper cucumberFeature) throws Throwable {
 		testNGCucumberRunner.runScenario(pickleEvent.getPickleEvent());
+		
 	}
 
 	@AfterClass(alwaysRun = true)
@@ -42,4 +44,6 @@ public class TestRunner {
 		testNGCucumberRunner.finish();
 		 
 	}
+
+	
 }
