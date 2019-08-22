@@ -1,5 +1,9 @@
 package org.bismi.testng;
-
+/**
+ * @author Sulfikar Ali Nazar -
+ * sulfikar@outlook.com
+ *  BismiAutomationFramework - https://bismi.solutions
+ */
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,11 +1,17 @@
 package org.bismi.steps;
-
+/**
+ * @author Sulfikar Ali Nazar -
+ * sulfikar@outlook.com
+ *  BismiAutomationFramework - https://bismi.solutions
+ */
 
 import org.bismi.util.CommonUtil;
 
-import io.cucumber.core.api.Scenario;
-import io.cucumber.java.Before;
-import io.cucumber.java.en.*;
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.*;
+
+
 
 public class Login {
 
@@ -41,7 +47,7 @@ public class Login {
 	@When("I enter valid credentials")
 	public void i_enter_valid_credentials() {
 		
-		loginScenario.embed(CommonUtil.getScreenshotAsByte(), "image/png","EEEEEEEE");
+		loginScenario.embed(CommonUtil.getScreenshotAsByte(), "image/png");
 	}
 
 	@Then("should be navigated to home page")

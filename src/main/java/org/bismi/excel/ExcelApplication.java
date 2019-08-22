@@ -1,7 +1,8 @@
 package org.bismi.excel;
 /**
- * @author Sulfikar Ali Nazar
- *
+ * @author Sulfikar Ali Nazar -
+ * sulfikar@outlook.com
+ *  BismiAutomationFramework - https://bismi.solutions
  */
 import java.util.ArrayList;
 import java.util.List;

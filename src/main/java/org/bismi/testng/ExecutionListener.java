@@ -1,5 +1,9 @@
 package org.bismi.testng;
-
+/**
+ * @author Sulfikar Ali Nazar -
+ * sulfikar@outlook.com
+ *  BismiAutomationFramework - https://bismi.solutions
+ */
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.IExecutionListener;

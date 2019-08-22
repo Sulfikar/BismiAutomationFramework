@@ -3,7 +3,7 @@
 Feature: Feature to automate desktop application
   I want to use this template for my feature file
 
-  @DataCreation
+  @DataCreation @TCID1
   Scenario: Scenario to test desktop application
     Given I launch notepad
     When I enter some data

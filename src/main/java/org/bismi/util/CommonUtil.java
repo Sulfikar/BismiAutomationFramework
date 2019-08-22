@@ -1,5 +1,9 @@
 package org.bismi.util;
-
+/**
+ * @author Sulfikar Ali Nazar -
+ * sulfikar@outlook.com
+ *  BismiAutomationFramework - https://bismi.solutions
+ */
 import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;

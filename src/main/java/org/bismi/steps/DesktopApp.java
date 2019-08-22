@@ -1,10 +1,16 @@
 package org.bismi.steps;
-
+/**
+ * @author Sulfikar Ali Nazar -
+ * sulfikar@outlook.com
+ *  BismiAutomationFramework - https://bismi.solutions
+ */
 import org.bismi.util.CommonUtil;
 
-import io.cucumber.core.api.Scenario;
-import io.cucumber.java.Before;
-import io.cucumber.java.en.*;
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.*;
+
+
 
 public class DesktopApp {
 	
@@ -17,7 +23,7 @@ private Scenario desktopScenario;
 	@Given("I launch notepad")
 	public void i_launch_notepad() {
 	 System.out.println(" ----> Launching Notepad -----> ");
-	 desktopScenario.embed(CommonUtil.getScreenshotAsByte(), "image/png","Sulfikarsdata");
+	 desktopScenario.embed(CommonUtil.getScreenshotAsByte(), "image/png");
 	}
 
 	@When("I enter some data")
